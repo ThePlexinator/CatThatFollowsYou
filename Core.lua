@@ -6,7 +6,7 @@ local PathfindingService = game:GetService('PathfindingService')
 
 local meowTick,meowIteration = tick(),math.random(1,10) -- for the meows :3
 
--- prevents lagging from serverside
+-- prevents lagging from clientside
 for i,v in pairs(script.Parent:GetChildren()) do
 	if not v:IsA('BasePart') then continue end
 	if v.Anchored then continue end
